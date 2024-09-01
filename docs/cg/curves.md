@@ -1,7 +1,6 @@
-## Curve Representation
 Path of a continuously moving point in the space. Set of all points where the moving point has been.
 
-### Mathematical Description
+## Mathematical Description
 - Parametric Curves:
     - In 2D: $C(t) = (x(t), y(t)), C: \mathbb{R} \rightarrow \mathbb{R^2}$
     - In 3D: $C(t) = (x(t), y(t), z(t)), C: \mathbb{R} \rightarrow \mathbb{R^3}$
@@ -12,7 +11,7 @@ Path of a continuously moving point in the space. Set of all points where the mo
 !!! warning
     Always ensure that Implicit curves are of the form $f(x, y) = 0$ and not $f(x, y) = c$.
 
-#### Some representations of popular curves
+### Some representations of popular curves
 
 
 <div class="center-table" markdown>
@@ -29,7 +28,7 @@ Path of a continuously moving point in the space. Set of all points where the mo
 
 **Parametric Polynomial Curves**: $C(t) = \{x(t), y(t)\}$ is polynomial iff $x(t)$ and $y(t)$ are polynomials in $t$.
 
-### Approximation Curves
+## Approximation Curves
 Do not need to interpolate all the points(i.e. pass through all the points). Approximation curves are used to represent the shape of the curve.
 
 Examples:
@@ -39,7 +38,7 @@ Examples:
 - Catmull-Rom Splines
 - etc.
 
-### Bezier Curves
+## Bezier Curves
 <figure markdown="span">
   ![Quadratic Bezier Curve](images/quad_bezier.png){ width="600" }
   <figcaption>Quadratic Bezier Curve</figcaption>
@@ -60,7 +59,7 @@ $$B^n(t) = \sum_{i=0}^{n} {n \choose i} (1-t)^{n-1}t^i P_i$$
 
 where ${n \choose i}$ is the binomial coefficient, and $P_i$ are the control points.
 
-#### Properties of Bezier Curves
+### Properties of Bezier Curves
 - The curve always passes through the end points, i.e. $B^n(0) = P_0$ and $B^n(1) = P_n$.
 - The curve is a straight line iff all the control points are collinear.
 - The start and end tangent vectors are parallel to the line joining the first and last control points, i.e.
@@ -86,7 +85,7 @@ where ${n \choose i}$ is the binomial coefficient, and $P_i$ are the control poi
 
     where $w_i$ are the weights. They have better local control and can represent conic sections, but they are computationally expensive.
 
-### Interpolation Curves
+## Interpolation Curves
 Given a set of points $P_0, P_1, \dots, P_n$ , we want to construct a curve that passes through all the points. $C(k) = p_k$ where $k = 0, 1, \dots, n-1$.
 
 Some interpolation curves are:
@@ -102,7 +101,7 @@ Some interpolation curves are:
 <figcaption>Different types of interpolation</figcaption>
 </figure>
 
-#### Lagrange Interpolation
+### Lagrange Interpolation
 Given a set of points $P_0, P_1, \dots, P_n$, the Lagrange interpolation polynomial is given by:
 
 $$L(k) = \sum_{i=0}^{n} P_i l_i(k)$$
@@ -113,7 +112,7 @@ $$l_i(k) = \prod_{j=0, j \neq i}^{n} \frac{k - k_j}{k_i - k_j}$$
 
 We rarely use Lagrange interpolation in practice because of the huge oscillations and large interpolation error.
 
-### Piecewise Interpolation Curves
+## Piecewise Interpolation Curves
 
 Known as "Poly-Curves". Each segment  between two interpolation points is represented by a curve. 
 
@@ -122,7 +121,7 @@ Known as "Poly-Curves". Each segment  between two interpolation points is repres
 <figcaption>Two types of interpolation, Linear on the right and Cubic Bezier on the left</figcaption>
 </figure>
 
-#### Continuity in Piecewise Curves
+### Continuity in Piecewise Curves
 
 Parametric Continuity $C^n$
 
