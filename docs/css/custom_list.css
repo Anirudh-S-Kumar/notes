@@ -13,10 +13,18 @@ article ul ul ul {
   list-style-type: square !important;
 }
 
-.md-typeset__table {
-  width: 75%;
-}
+// .md-typeset__table {
+  // width: 75%;
+// }
 
 .md-typeset__table table:not([class]) {
   display: table
+}
+
+.center-table {
+  text-align: center;
+}
+
+.md-typeset .center-table :is(td,th):not([align]) {
+  text-align: initial; /* Reset alignment for table cells */
 }
