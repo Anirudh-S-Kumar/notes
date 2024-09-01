@@ -1,4 +1,8 @@
 site_name: Notes 
+site_url: https://anirudh-s-kumar.github.io/notes/
+repo_name: Anirudh-S-Kumar/notes
+repo_url: https://github.com/Anirudh-S-Kumar/notes
+edit_uri: edit/main/docs/
 theme:
   name: material
   features:
