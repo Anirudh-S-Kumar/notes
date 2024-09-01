@@ -71,5 +71,9 @@ markdown_extensions:
 nav:
   - Foundations of Finance:
     - Time Value of Money: ff/time_value_money.md
+
   - Computer Graphics:
-    - Shape Modelling: cg/shape_modelling.md
+    - index: cg/index.md
+    - Curves: cg/curves.md
+    - Surfaces and Volumes: cg/surfaces.md
+    - Mesh: cg/mesh.md

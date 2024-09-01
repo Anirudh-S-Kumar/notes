@@ -142,8 +142,11 @@ Parametric Continuity $C^n$
 </div>
 Geometric Continuity $G^n$: Tangents have equal direction but not magnitude at the junction points. Curve is $G^n$ continuous if it can be reparametrized to be $C^n$ continuous.
 
+<div class="center-table" markdown>
+
 | Continuity | Description |
 |------------|-------------|
 | $G^0$ | Curve touch at the joint point (=$C^0$) |
 | $G^1$ | Curves share a common tangent direction |
 | $G^2$ | Curves share a common center of curvature |
+</div>
