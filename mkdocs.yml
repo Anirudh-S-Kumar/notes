@@ -43,10 +43,6 @@ plugins:
   - minify:
       minify_html: true
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/aflah02
 
 markdown_extensions:
   - pymdownx.highlight:
