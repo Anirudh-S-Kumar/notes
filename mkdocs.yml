@@ -82,5 +82,5 @@ nav:
   - Computer Graphics:
     - index: cg/index.md
     - Curves: cg/curves.md
-    - Surfaces and Volumes: cg/surfaces.md
+    - Surfaces and Volumes: cg/surfaces_volumes.md
     - Mesh: cg/mesh.md
