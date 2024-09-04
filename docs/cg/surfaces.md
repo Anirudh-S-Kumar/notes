@@ -15,6 +15,7 @@ A non-degenerate solid object is one where each point can be classified as eithe
 | Closed/Open | Sphere is closed, Plane is open |
 | Manifold/Non-Manifold | Sphere is manifold, Cone is non-manifold |
 
+
 ### Topological Classification
 - Topological Equivalence: Two surfaces are topologically equivalent if one can be deformed into the other without any cuts or gluing.
 - Genus: Maximum Number of cuttings along non-intersecting closed curves that can be made without separating the surface.
