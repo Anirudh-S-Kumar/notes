@@ -36,6 +36,14 @@ $$\begin{bmatrix}a & b\\c & d\end{bmatrix} \rightarrow \begin{bmatrix}a & b & 0\
 
 </div>
 
+??? info "Properties of Rotation Matrix"
+    - $\mathbf{R}^\top = \mathbf{R}^{-1}$
+    - $\det(\mathbf{R}) = 1$
+
+    Make sure these are always satisfied.
+
+
+
 ## Composition of Transformations
 To apply multiple transformations to a point, we multiply the matrices of the transformations. The order of multiplication is important. For example, to rotate and then translate a point, we would do $\mathbf{T}\mathbf{R}p$. Operations are evaluated from right to left.
 
@@ -103,3 +111,17 @@ To rotate around arbitrary vector $\mathbf{a} = (x, y, z)$
 - Rotate back to $uvw$ basis
 
 $$R_a(\phi) = R_{uvw}^\top \hspace{10px} R_z(\phi) \hspace{10px} R_{uvw}$$
+
+#### Constructing a basis from a vector
+
+- make $w$ a unit vector $w = \frac{a}{||a||}$
+- Choose any vector $t$ not parallel to $w$, and build $u = \frac{t \times w}{||t \times w||}$
+- Complete the basis by $v = w \times u$
+
+### Transforming Normals
+
+- Normals are very common in computer graphics, so we need a way to also transform surface normals.
+- They do not transform the way surfaces do 
+- Let the surface points be transformed by the matrix $\mathbf{M}$. Then the normal vectors are transformed by the the following
+
+$$ \mathbf{N'} = \mathbf{M}^{-\top} \mathbf{N} $$
