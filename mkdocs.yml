@@ -50,7 +50,6 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - markdown_grid_tables
   - pymdownx.snippets
   - admonition
   - pymdownx.arithmatex:
