@@ -50,6 +50,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
+  - markdown_grid_tables
   - pymdownx.snippets
   - admonition
   - pymdownx.arithmatex:
@@ -85,3 +86,4 @@ nav:
     - Surfaces and Volumes: cg/surfaces_volumes.md
     - Mesh: cg/mesh.md
     - Geometric Transformations: cg/transformations.md
+    - Viewing and Projections: cg/viewing.md
