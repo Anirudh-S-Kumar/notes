@@ -51,7 +51,7 @@ To apply multiple transformations to a point, we multiply the matrices of the tr
     In general, Matrix Multiplication is not commutative. $\mathbf{AB} \neq \mathbf{BA}$.
 
 ### Transformation about Arbitrary Point
-To rotate a point about an arbitrary point $(x_0, y_0)$, we first translate the point to the origin, rotate it, and then translate it back.
+To rotate a point about an arbitrary point $(p_x, p_y)$, we first translate the point to the origin, rotate it, and then translate it back.
 
 $$ \mathbf{R}_p(\phi) = \mathbf{T}(p_x, p_y) \hspace{10px} \mathbf{R}(\phi) \hspace{10px} \mathbf{T}(-p_x, -p_y) $$
 
@@ -61,7 +61,7 @@ $$ \mathbf{S}_p(s_x, s_y) = \mathbf{T}(p_x, p_y) \hspace{10px} \mathbf{S}(s_x, s
 
 ## Decomposition of Transformations
 
-Any 2D matrix can be decomposed into a product of riotation, scale, rotation. 
+Any 2D matrix can be decomposed into a product of rotation, scale, rotation. 
 
 - Eigenvalue Decomposition: $\mathbf{A} = \mathbf{R} \hspace{10px} \mathbf{S} \hspace{10px} \mathbf{R}^{\top}$ 
 
@@ -101,9 +101,9 @@ Properties which were applicable in 2D transformations are also applicable in 3D
 
 Given 3 mutually orthogonal unit vectors $\mathbf{u} = (x_u, y_u, z_u)$, $\mathbf{v} = (x_v, y_v, z_v)$, $\mathbf{w} = (x_w, y_w, z_w)$, $R_{uvw}$ transforms the coordinate system from $xyz$ to $uvw$.
 
-$$ R_{uvw} = \begin{bmatrix} x_u & y_u & z_u \\ x_v & y_v & z_v \\ x_w & y_w & z_w\end{bmatrix} $$
+$$ R_{uvw} = \begin{bmatrix} x_u & y_u & z_u \\ x_v & y_v & z_v \\ x_w & y_w & z_w\end{bmatrix} = \begin{bmatrix} u \\ v \\ w \end{bmatrix} $$
 
-To rotate around arbitrary vector $\mathbf{a} = (x, y, z)$
+To rotate around arbitrary vector $\mathbf{a} = (x_a, y_a, z_a)$
 
 - Form an orthonormal $uvw$ coordinate system with $w = \mathbf{a}$ 
 - Rotate $uvw$ basis to canonical basis $xyz$
