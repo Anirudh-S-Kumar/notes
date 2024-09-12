@@ -195,7 +195,7 @@ $$ \begin{pmatrix}
  \end{pmatrix}
 \rightarrow
 \begin{pmatrix}
-    \frac{n}{z} nx \\ \frac{n}{z} ny \\ (n + f - fn) \\ z
+    \frac{n}{z} nx \\ \frac{n}{z} ny \\ (n + f - \frac{fn}{z}) \\ 1
 \end{pmatrix}
 $$
 
