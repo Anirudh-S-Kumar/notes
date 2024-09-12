@@ -88,3 +88,4 @@ nav:
     - Mesh: cg/mesh.md
     - Geometric Transformations: cg/transformations.md
     - Viewing and Projections: cg/viewing.md
+    - Colors: cg/colors.md
