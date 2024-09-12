@@ -31,8 +31,8 @@ $$\begin{bmatrix}a & b\\c & d\end{bmatrix} \rightarrow \begin{bmatrix}a & b & 0\
 | Translation    | $\begin{bmatrix}1 & 0 & t_x\\0 & 1 & t_y\\0 & 0 & 1\end{bmatrix}$ |
 | Rotation       | $\begin{bmatrix}\cos\theta & -\sin\theta & 0\\\sin\theta & \cos\theta & 0\\0 & 0 & 1\end{bmatrix}$ |
 | Scaling        | $\begin{bmatrix}s_x & 0 & 0\\0 & s_y & 0\\0 & 0 & 1\end{bmatrix}$ |
-| $\text{Shear}_y$ ($\phi$ is angle along axis)      | $\begin{bmatrix}1 & k & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
-| $\text{Shear}_x$       | $\begin{bmatrix}1 & 0 & 0\\k & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
+| $\text{Shear}_x$ ($\phi$ is angle along axis)      | $\begin{bmatrix}1 & \tan{\phi} & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
+| $\text{Shear}_y$       | $\begin{bmatrix}1 & 0 & 0\\ \tan{\phi} & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
 
 </div>
 
