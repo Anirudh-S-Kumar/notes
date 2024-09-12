@@ -31,8 +31,8 @@ $$\begin{bmatrix}a & b\\c & d\end{bmatrix} \rightarrow \begin{bmatrix}a & b & 0\
 | Translation    | $\begin{bmatrix}1 & 0 & t_x\\0 & 1 & t_y\\0 & 0 & 1\end{bmatrix}$ |
 | Rotation       | $\begin{bmatrix}\cos\theta & -\sin\theta & 0\\\sin\theta & \cos\theta & 0\\0 & 0 & 1\end{bmatrix}$ |
 | Scaling        | $\begin{bmatrix}s_x & 0 & 0\\0 & s_y & 0\\0 & 0 & 1\end{bmatrix}$ |
-| $\text{Shear}_x$ ($\phi$ is angle along axis)      | $\begin{bmatrix}1 & k & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
-| $\text{Shear}_y$       | $\begin{bmatrix}1 & 0 & 0\\k & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
+| $\text{Shear}_y$ ($\phi$ is angle along axis)      | $\begin{bmatrix}1 & k & 0\\0 & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
+| $\text{Shear}_x$       | $\begin{bmatrix}1 & 0 & 0\\k & 1 & 0\\0 & 0 & 1\end{bmatrix}$ |
 
 </div>
 
@@ -101,7 +101,7 @@ Properties which were applicable in 2D transformations are also applicable in 3D
 
 Given 3 mutually orthogonal unit vectors $\mathbf{u} = (x_u, y_u, z_u)$, $\mathbf{v} = (x_v, y_v, z_v)$, $\mathbf{w} = (x_w, y_w, z_w)$, $R_{uvw}$ transforms the coordinate system from $xyz$ to $uvw$.
 
-$$ R_{uvw}^\top = \begin{bmatrix} x_u & y_u & z_u \\ x_v & y_v & z_v \\ x_w & y_w & z_w\end{bmatrix} $$
+$$ R_{uvw} = \begin{bmatrix} x_u & y_u & z_u \\ x_v & y_v & z_v \\ x_w & y_w & z_w\end{bmatrix} $$
 
 To rotate around arbitrary vector $\mathbf{a} = (x, y, z)$
 
