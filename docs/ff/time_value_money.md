@@ -1,4 +1,3 @@
-# Time Value of Money
 The main idea is that a dollar today is worth more than a dollar tomorrow. This is because you can invest that dollar today and have more than a dollar tomorrow. This is the concept of the time value of money. This has the following affects
 
 - *Spending* - You can buy more with 1000 Rs today than 1000 Rs a year from now.
@@ -90,4 +89,74 @@ $$PVIF = \frac{1}{(1 + i)^t}$$
 
     5% semi-annually is better.
 
+## Annuities
+
+Annuities are a series of equal payments made at regular intervals. 
+### Future Value of Annuity
+
+$$FVIFA = A + A(1 + r) + A(1 + r)^2 + \ldots + A(1 + r)^{n - 1} = A \frac{(1 + r)^n - 1}{r}$$
+
+FVIFA - **F**uture **V**alue **I**nterest **F**actor of **A**nnuity
+
+??? question "Future Value of $1000 invested at 5% for 5 years?"
+    $FVIFA = 1000 \frac{(1 + 0.05)^5 - 1}{0.05} = 1276.28$
+
+### Present Value of Annuity
+
+$$PVIFA = \frac{C}{(1 + r)} + \frac{C}{(1 + r)^2} + \ldots + \frac{C}{(1 + r)^n} = C \frac{1 - (1 + r)^{-n}}{r}$$
+
+There are two types of annuities:
+
+- **Ordinary Annuity**: Payments are made at the end of the period.
+- **Annuity Due**: Payments are made at the beginning of the period.
+
+$$PVIFA_{\text{Ordinary}} = \frac{C}{(1 + r)} + \frac{C}{(1 + r)^2} + \ldots + \frac{C}{(1 + r)^n} = C \frac{1 - (1 + r)^{-n}}{r}$$
+
+$$PVIFA_{\text{Due}} = C + \frac{C}{(1 + r)} + \ldots + \frac{C}{(1 + r)^{n - 1}} = C \frac{1 - (1 + r)^{-n}}{r} (1 + r)$$
+
+
+## Perpetuities
+
+Perpetuities are annuities that continue indefinitely.
+
+$$PV= \frac{C}{r}$$
+
+### Growing Perpetuities
+
+Perpetuities that grow at a constant rate, say $g$.
+
+$$PV = \frac{C}{r - g}$$
+
+For a growing fixed maturity annuity:
+
+$$PV = \frac{C}{1+r} + \frac{C(1+g)}{(1+r)^2} + \ldots + \frac{C(1+g)^{n-1}}{(1+r)^n} = \frac{C}{r-g}\left(1-\frac{(1+g)^n}{(1+r)^n}\right)$$
+
+
+## Loan Amortization
+
+Loan amortization is the process of paying off a loan in installments. Let's construct an amortization schedule for a loan of Rs. 1000 at 10% p.a. with 3 equal payments.
+
+1. Find the required annual amount
+    - $$ 1000 = A * PVIFA_{\text{Ordinary}} = A \frac{1 - (1 + 0.1)^{-3}}{0.1} = A * 2.4869$$
+
+    $$ A = 1000 / 2.4869 = 402.11$$
+
+    !!! note 
+        Remember that $FV = 0$ as the reason for amortization is to pay off the loan.
+
+1. Find interest paid in first year
+    - $I_1 = 1000 * 0.1 = 100$
+1. Find principal repaid in first year
+    - $P_1 = A - I_1 = 402.11 - 100 = 302.11$
+1. Find outstanding balance after first year
+    - $B_1 = 1000 - P_1 = 1000 - 302.11 = 697.89$
+  
+| Year | Beginning Balance | Payment | Interest | Principal | Ending Balance |
+|------|-------------------|---------|----------|-----------|----------------|
+| 1    | 1000              | 402.11  | 100      | 302.11    | 697.89         |
+| 2    | 697.89            | 402.11  | 69.79    | 332.32    | 366            |
+| 3    | 366               | 402.11  | 36.6     | 365.51    | 0              |
+
+- Total interest paid = 100 + 69.79 + 36.6 = 206.39
+- Total payment = 402.11 * 3 = 1206.33
 
