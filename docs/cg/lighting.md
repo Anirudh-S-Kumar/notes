@@ -148,14 +148,14 @@ $$c \propto n \cdot l$$
 
 - Reflection coefficient $k_d$ represents fraction of light reflected.
 
-$$I_d = k_d \max((l \cdot n) L_d, 0)$$
+$$I_d = k_d L_d \max((l \cdot n), 0)$$
 
 #### Light source Attenuation
 
 - Energy decreases as the inverse square with distance 
 - Therefore for diffuse lighting, 
 
-$$I_d = k_d f_{att} \max((l \cdot n) L_d, 0)$$
+$$I_d = k_d f_{att} L_d \max((l \cdot n), 0)$$
 
 where $f_{att}$ is the light source attenuation function 
 
