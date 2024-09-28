@@ -80,6 +80,7 @@ markdown_extensions:
 nav:
   - Foundations of Finance:
     - Time Value of Money: ff/time_value_money.md
+    - Analysis of Financial Statements: ff/financial_statements.md
 
   - Computer Graphics:
     - index: cg/index.md
