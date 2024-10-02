@@ -300,6 +300,7 @@ If we were to use credit to buy inventory at 60, and sell it at 90, the balance 
 ## Income Statement
 
 Income statement is a record of financial activities of a business over a period of time.
+
 - Revenue: Money earned from selling goods or services
 - Direct Costs: Costs directly related to producing goods or services
 - Indirect Costs: Costs not directly related to producing goods or services
