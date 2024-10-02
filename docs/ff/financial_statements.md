@@ -309,6 +309,7 @@ Income statement is a record of financial activities of a business over a period
 - Net Profit: Operating Profit - Tax and Interest
 
 ### Some other terms
+
 - Accrued Expenses : Expenses that have been incurred but not yet paid (office supplies of 2000 were used but will pe paid next year)
 - Prepayment : Payment made in advance (1 year insurance, but paid in monthly installments)
 - Depreciation : Reduction in value of an asset over time 
@@ -442,6 +443,7 @@ This method is rarely used
 ### Deriving complete cash flow statement
 
 It's possible to derive cash flow statements using 
+
 - Last year's balance sheet
 - This year's balance sheet
 - This year's income statement
@@ -454,6 +456,7 @@ It's possible to derive cash flow statements using
 #### Stage two - classifying the cash flow
 
 Classify each of the cash flow statements into the following :-
+
 - Operating cash flows
 - Investing cash flows
 - Financial cash flows
@@ -472,3 +475,15 @@ Difference in retained earnings is due to
 
 - Net income (added)
 - Dividends (subtracted)
+
+## Some Important Quantities
+
+| Quantity | Formula |
+| - | - |
+| Gross Profit | Revenue - Cost of Sales |
+| Operating Profit | Gross Profit - Operating Expenses |
+| Net Profit | Operating Profit - Tax |
+| Operating Cash Flow | Net Income + Depreciation |
+| Net Cash Flow | Operating Cash Flow + Investing Cash Flow + Financing Cash Flow |
+| Free Cash Flow | $EBIT(1 - Tax) + \text{Depreciation} - \text{CAPEX} -  \Delta \text{Net Working Capital}$ |
+| Net working capital | Current Assets - (Current Liabilities - Notes Payable) |
