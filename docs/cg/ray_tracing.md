@@ -43,7 +43,7 @@ for each pixel in the image:
 
 - All rays will have direction $- \mathbf{w}$
 - A viewpoint is not require but viewing rays can start from the plane containing the camera, so we know when object is behind the camera.
-- Viewing rays start on the image plane and are parallel to each other, and cab be defined by point $e$ and vectors $ \mathbf{u}$ and $ \mathbf{v}$
+- Viewing rays start on the image plane and are parallel to each other, and cab be defined by point $e$ and vectors $\mathbf{u}$ and $\mathbf{v}$
 
 <figure markdown="span">
     ![Orthographic Rays](images/orthographic_rays.png){ width="300" }
@@ -51,7 +51,7 @@ for each pixel in the image:
 </figure>
 
 - $l$ and $r$ are left and right limits of the image plane (measured along $\mathbf{u} $) $l < 0 < r$
-- $b$ and $t$ are bottom and top limits of the image plane (measured along $ \mathbf{v}$) $b < 0 < t$
+- $b$ and $t$ are bottom and top limits of the image plane (measured along $\mathbf{v}$) $b < 0 < t$
 
 Pixel spacing for $n_x \times n_y$ image is
 
@@ -66,8 +66,9 @@ Therefore, pixel position $(i, j)$ in the raster image is
 Where $u, v$ are the coordinates of the pixel in the image plane w.r.t origin $e$ and basis vectors $\mathbf{u} ,  \mathbf{v}$
 
 Therefore, Ray parameters are 
+
 - Origin: $e + u * \mathbf{u} + v * \mathbf{v}$
-- Direction : $- \mathbf{w}$
+- Direction : $-\mathbf{w}$
 
 ### Perspective Views
 
@@ -130,7 +131,7 @@ $$n = 2(p - c) \hspace{20px} \text{and} \hspace{20px} \hat{n} = \frac{p - c}{R}$
 
 - Parametric equation for a triangle is
 
-$$ \mathbf{e} + t \mathbf{d} = \mathbf{f}(u, v)$$ 
+$$\mathbf{e} + t \mathbf{d} = \mathbf{f}(u, v)$$ 
 
 - 3 unknowns $t, u, v$ and 3 equations $(x, y, z)$ for the triangle. We can solve for $t, u, v$ and check if $u, v$ are within the range of the triangle.
 
