@@ -139,6 +139,20 @@ This is a more complex data structure. Each Vertex and Face have a reference to 
   <figcaption>Winged Edge</figcaption>
 </figure>
 
+#### One Ring Traversal in Winged Edge
+
+- Start with a vertex
+- Get one of its edges
+- Add the other vertex of the edge to the one ring
+- Set `curr_edge = ePrevL`
+- Till `curr_edge->v0` is not equal to the first vertex in ring, add it
+- Repeat for `ePrevR`
+
+<figure markdown="span">
+  ![One Ring Traversal in Winged Edge](images/winged_one_ring.png){ width="600" }
+  <figcaption>One Ring Traversal in Winged Edge</figcaption>
+</figure>
+
 ### Half Edge
 
 Half edge is a more compact data structure. Each edge is split into two half edges. Each half edge has the following
@@ -178,6 +192,32 @@ Half edge is a more compact data structure. Each edge is split into two half edg
   ![Half Edge](images/half_edge.png){ width="400" }
   <figcaption>Half Edge</figcaption>
 </figure>
+
+#### One Ring Traversal in Half Edge
+
+- Start with a vertex
+- Go to one of its half edges
+- Switch to reverse edge (twin)
+- Go to the next half edge (original vertex)
+- Repeat until you repeat the original edge
+
+<figure markdown="span">
+  ![One Ring Traversal in Half Edge](images/half_edge_one_ring.png){ width="600" }
+  <figcaption>One Ring Traversal in Half Edge</figcaption>
+</figure>
+
+#### Boundary Traversal in Half Edge
+
+- Start with a boundary edges
+- Go to the next boundary edge
+- Switch to the reverse edge (twin)
+- Repeat until you reach the original edge
+
+<figure markdown="span">
+  ![Boundary Traversal in Half Edge](images/half_edge_boundary.png){ width="600" }
+  <figcaption>Boundary Traversal in Half Edge</figcaption>
+</figure>
+
 
 ??? info "Directed Edge"
     Half edge modification for triangular meshes.
