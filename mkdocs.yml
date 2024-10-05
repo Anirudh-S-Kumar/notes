@@ -92,3 +92,4 @@ nav:
     - Viewing and Projections: cg/viewing.md
     - Colors: cg/colors.md
     - Lighting and Shading: cg/lighting.md
+    - Ray Tracing : cg/ray_tracing.md
