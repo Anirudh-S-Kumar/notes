@@ -215,3 +215,4 @@ $$t = \frac{(p_1 - e) \cdot n}{d \cdot n}$$
     ![Winding Number Algorithm](images/winding_number_algo.png){ width="400" }
     <figcaption>Winding Number Algorithm</figcaption>
 </figure>
+
